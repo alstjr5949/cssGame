@@ -1,0 +1,90 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("image-from-rawpixel-id-2339099-jpeg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  position: relative;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #9795f0 0%, #3fa8e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+article {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main div {
+  width: 350px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+div span {
+  font-size: 40px;
+}
+
+div h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div p {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.5);
+}
