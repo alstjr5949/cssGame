@@ -1,5 +1,26 @@
-@import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 * {
   box-sizing: border-box;
@@ -7,20 +28,16 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url("image-from-rawpixel-id-2339099-jpeg.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 main {
   width: 400px;
-  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +49,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.25);
   position: relative;
   padding: 30px;
+  margin: 150px auto;
 }
 
 h1 {
@@ -43,7 +61,7 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-article {
+.content {
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -51,7 +69,7 @@ article {
   justify-content: space-between;
 }
 
-main div {
+.content li {
   width: 350px;
   height: 60px;
   background: rgba(255, 255, 255, 0.35);
@@ -66,16 +84,16 @@ main div {
   padding: 0px 20px;
 }
 
-div span {
+.content span {
   font-size: 40px;
 }
 
-div h2 {
+.content h2 {
   font-size: 20px;
   font-weight: 700;
 }
 
-div p {
+.content p {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -83,8 +101,6 @@ div p {
 footer {
   display: flex;
   align-items: center;
-  position: absolute;
-  bottom: 10px;
-  height: 40px;
+  margin-top: 30px;
   color: rgba(0, 0, 0, 0.5);
 }
