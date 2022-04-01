@@ -28,7 +28,6 @@ a {
 }
 
 body {
-  width: 100vw;
   height: 100vh;
   background-image: url("image-from-rawpixel-id-2339099-jpeg.jpg");
   background-size: cover;
@@ -82,6 +81,12 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
+  transition: all 0.4s;
+  scale: 1;
+}
+
+.content li:hover {
+  transform: scale(1.1);
 }
 
 .content span {
